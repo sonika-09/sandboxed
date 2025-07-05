@@ -144,23 +144,27 @@ body {
   .tortoise-left {
     width: 350px;
     left: -90px;
-    top: 50px;
+    top: 60px; 
   }
   .tortoise-right {
     width: 500px;
     right: -150px;
-    top: 50px;
+    top: 200px;
   }
   .volumes {
-    flex-direction: row; 
     flex-wrap: wrap; 
     justify-content: center;
-    gap: 20px; 
-    padding-bottom: 40px; 
+    gap: 20px;
+    padding: 40px 20px 60px;
   }
   .volume-card {
-    width: 120px;
+    width: 30vw;
+    max-width: 110px;
     padding: 16px;
+  }
+  .volume-card img {
+    width: 100%;
+    height: auto;
   }
   .volume-card p {
     font-size: 13px;
