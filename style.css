@@ -131,19 +131,23 @@ body {
 
 @media (max-width: 768px) {
   .tortoise-left {
-    width: 300px;
-    left: -100px;
-    top: 60px;
+    width: 350px;
+    left: -90px;
+    top: 50px;
   }
-
   .tortoise-right {
-    width: 800px;
-    right: -350px;
-    top: 20px;
+    width: 500px;
+    right: -150px;
+    top: 50px;
   }
   .volumes {
-    gap: 16px;
-    flex-wrap: wrap;
+    flex-direction: column;
+    align-items: center;
+    gap: 30px;
+    padding-bottom: 60px;
+  }
+  .tagline {
+    margin-bottom: 30px;
   }
 }
 
