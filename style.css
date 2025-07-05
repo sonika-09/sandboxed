@@ -1,0 +1,169 @@
+@font-face {
+  font-family: 'TAN Meringue';
+  src: url('fonts/TAN MERINGUE.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+}
+
+/* Reset and base styles */
+body {
+  margin: 0;
+  font-family: 'Darker Grotesque', sans-serif;
+  background-color: #C26F83;
+  color: #fceef2;
+  overflow-x: hidden;
+  text-align: center;
+  position: relative;
+}
+
+/* Top pink banner */
+.banner {
+  background-color: #fcdbe1;
+  color: #4e2c34;
+  padding: 12px;
+  font-weight: normal;
+  font-size: 16px;
+  border-bottom: 2px solid #ffffff33;
+  z-index: 2;
+  position: relative;
+  letter-spacing: 1.2px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 17px;
+}
+
+.banner-icon {
+  height: 20px;
+  width: auto;
+  transform: scale(3.5);       /* visually enlarges the image */
+  transform-origin: center;
+}
+
+/* Logo */
+.logo-text {
+  font-family: 'TAN Meringue';
+  font-size: 56px;
+  color: #772C41;
+  margin: 40px 0 10px;
+  z-index: 2;
+  position: relative;
+}
+
+/* Tagline */
+.tagline {
+  font-size: 18px;
+  max-width: 650px;
+  margin: 0 auto 50px;
+  line-height: 1.6;
+  z-index: 2;
+  position: relative;
+}
+
+/* Volume section */
+.volumes {
+  display: flex;
+  justify-content: center;
+  gap: 40px;
+  padding-bottom: 80px;
+  z-index: 2;
+  position: relative;
+}
+
+/* Volume cards */
+.volume-card {
+  background-color: #592a3a;
+  padding: 24px;
+  border-radius: 12px;
+  width: 180px;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.3);
+  border: none;
+  color: #fcdbe1;
+  font-size: 16px;
+  cursor: default;
+  opacity: 1;
+  transition: all 0.3s ease;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  pointer-events: none;
+}
+
+.volume-card p {
+  font-family: 'TAN Meringue', serif;
+  font-size: 15px;
+  color: #fcdbe1;
+  margin: 0;
+}
+
+.volume-card img {
+  width: 100%;
+  height: auto;
+  margin-bottom: 12px;
+}
+
+.volume-card:disabled {
+  pointer-events: none;
+}
+
+.volume-card:enabled:hover {
+  opacity: 1;
+  transform: translateY(-2px);
+}
+
+/* 🐢 Tortoise images */
+.tortoise {
+  position: absolute;
+  /*width: 500px;*/
+  z-index: 1;
+  opacity: 0.9;
+}
+
+.tortoise-left {
+  width: 500px;
+  left: -70px;
+  top: -10px;
+}
+
+.tortoise-right {
+  width: 800px;
+  right: -250px;
+  top: 10px;
+}
+
+@media (max-width: 768px) {
+  .tortoise-left {
+    width: 300px;
+    left: -100px;
+    top: 60px;
+  }
+
+  .tortoise-right {
+    width: 800px;
+    right: -350px;
+    top: 20px;
+  }
+  .volumes {
+    gap: 16px; /* or even 12px if needed */
+    flex-wrap: wrap; /* allows buttons to stack neatly if they don't fit */
+  }
+}
+
+.bottom-banner {
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  background-color: #4e2c34; /* dark maroon background */
+  color: #fcdbe1;             /* soft pink text */
+  font-size: 13px;
+  font-weight: normal;
+  text-align: center;
+  padding: 12px 0;
+  border-top: 2px solid #ffffff33;
+  z-index: 3;
+  white-space: nowrap;
+  overflow: hidden;
+}
+
+
