@@ -5,7 +5,6 @@
   font-style: normal;
 }
 
-/* Reset and base styles */
 body {
   margin: 0;
   font-family: 'Darker Grotesque', sans-serif;
@@ -36,7 +35,7 @@ body {
 .banner-icon {
   height: 20px;
   width: auto;
-  transform: scale(3.5);       /* visually enlarges the image */
+  transform: scale(3.5);
   transform-origin: center;
 }
 
@@ -111,10 +110,9 @@ body {
   transform: translateY(-2px);
 }
 
-/* 🐢 Tortoise images */
+/* Tortoise images */
 .tortoise {
   position: absolute;
-  /*width: 500px;*/
   z-index: 1;
   opacity: 0.9;
 }
@@ -144,8 +142,8 @@ body {
     top: 20px;
   }
   .volumes {
-    gap: 16px; /* or even 12px if needed */
-    flex-wrap: wrap; /* allows buttons to stack neatly if they don't fit */
+    gap: 16px;
+    flex-wrap: wrap;
   }
 }
 
@@ -154,8 +152,8 @@ body {
   bottom: 0;
   left: 0;
   width: 100%;
-  background-color: #4e2c34; /* dark maroon background */
-  color: #fcdbe1;             /* soft pink text */
+  background-color: #4e2c34;
+  color: #fcdbe1;
   font-size: 13px;
   font-weight: normal;
   text-align: center;
