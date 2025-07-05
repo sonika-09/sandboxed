@@ -87,24 +87,20 @@ body {
   align-items: center;
   pointer-events: none;
 }
-
 .volume-card p {
   font-family: 'TAN Meringue', serif;
   font-size: 15px;
   color: #fcdbe1;
   margin: 0;
 }
-
 .volume-card img {
   width: 100%;
   height: auto;
   margin-bottom: 12px;
 }
-
 .volume-card:disabled {
   pointer-events: none;
 }
-
 .volume-card:enabled:hover {
   opacity: 1;
   transform: translateY(-2px);
@@ -116,39 +112,15 @@ body {
   z-index: 1;
   opacity: 0.9;
 }
-
 .tortoise-left {
   width: 500px;
   left: -70px;
   top: -10px;
 }
-
 .tortoise-right {
   width: 800px;
   right: -250px;
   top: 10px;
-}
-
-@media (max-width: 768px) {
-  .tortoise-left {
-    width: 350px;
-    left: -90px;
-    top: 50px;
-  }
-  .tortoise-right {
-    width: 500px;
-    right: -150px;
-    top: 50px;
-  }
-  .volumes {
-    flex-direction: column;
-    align-items: center;
-    gap: 30px;
-    padding-bottom: 60px;
-  }
-  .tagline {
-    margin-bottom: 30px;
-  }
 }
 
 .bottom-banner {
@@ -168,4 +140,32 @@ body {
   overflow: hidden;
 }
 
-
+@media (max-width: 768px) {
+  .tortoise-left {
+    width: 350px;
+    left: -90px;
+    top: 50px;
+  }
+  .tortoise-right {
+    width: 500px;
+    right: -150px;
+    top: 50px;
+  }
+  .volumes {
+    flex-direction: row; 
+    flex-wrap: wrap; 
+    justify-content: center;
+    gap: 20px; 
+    padding-bottom: 40px; 
+  }
+  .volume-card {
+    width: 120px;
+    padding: 16px;
+  }
+  .volume-card p {
+    font-size: 13px;
+  }
+  .tagline {
+    margin-bottom: 30px;
+  }
+}
