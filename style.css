@@ -1,3 +1,9 @@
+html, body {
+  margin: 0;
+  padding: 0;
+  overflow-x: hidden;
+}
+
 @font-face {
   font-family: 'TAN Meringue';
   src: url('fonts/TAN MERINGUE.ttf') format('truetype');
@@ -109,8 +115,10 @@ body {
 /* Tortoise images */
 .tortoise {
   position: absolute;
+  max-width: 100%;
   z-index: 1;
   opacity: 0.9;
+  pointer-events: none;
 }
 .tortoise-left {
   width: 500px;
@@ -152,15 +160,18 @@ body {
     top: 200px;
   }
   .volumes {
+    display: flex;
     flex-wrap: wrap; 
     justify-content: center;
-    gap: 20px;
-    padding: 40px 20px 60px;
+    gap: 12px;
+    padding: 0px 12px 60px;
   }
   .volume-card {
-    width: 30vw;
-    max-width: 110px;
-    padding: 16px;
+    width: 31%;
+    max-width: none;
+    min-width: 80px;
+    padding: 14px;
+    box-sizing: border-box;
   }
   .volume-card img {
     width: 100%;
@@ -171,5 +182,9 @@ body {
   }
   .tagline {
     margin-bottom: 30px;
+  }
+  .banner {
+    width: 100%;
+    box-sizing: border-box;
   }
 }
