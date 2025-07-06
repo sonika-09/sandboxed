@@ -146,6 +146,7 @@ body {
   z-index: 3;
   white-space: nowrap;
   overflow: hidden;
+  
 }
 
 @media (max-width: 768px) {
@@ -166,7 +167,9 @@ body {
   .tortoise-right {
     width: 500px;
     right: -150px;
-    top: 220px;
+    top: auto;
+    bottom: -80px;
+    z-index: 2;
   }
   .volumes {
     display: flex;
