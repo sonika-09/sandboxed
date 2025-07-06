@@ -169,8 +169,9 @@ body {
     right: -150px;
     bottom: 0;
     top: auto;
-    transform: translateY(50%);
-    z-index: 2;
+    position: fixed;
+    transform: translateY(40%);
+    z-index: 1;
   }
   .volumes {
     display: flex;
