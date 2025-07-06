@@ -164,7 +164,7 @@ body {
     flex-wrap: wrap; 
     justify-content: center;
     gap: 12px;
-    padding: 0px 12px 60px;
+    padding: 0px 12px 30px;
   }
   .volume-card {
     width: 31%;
@@ -186,5 +186,12 @@ body {
   .banner {
     width: 100%;
     box-sizing: border-box;
+  }
+  .tagline-wrapper {
+    background-color: rgba(252, 219, 225, 0.25);
+    padding: 12px;
+    margin: 0 auto 30px;
+    max-width: 90%;
+    border-radius: 10px;
   }
 }
