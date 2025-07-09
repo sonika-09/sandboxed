@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>SandBoxed - Volume 1</title>
+  <link rel="stylesheet" href="volume1.css" />
+</head>
+<body>
+  <header class="volume-header">
+    <h1 class="brand-title">SandBoxed</h1>
+    <h2 class="volume-title"><strong>Turbulence Ahead: The Breach That Shook Boeing</strong></h2>
+  </header>
+
+  <main class="article-section">
+    <article class="article-box">
+      <h3>Buffer Overrun, System Undone: The Technical Anatomy of Boeing’s Cyber Breach</h3>
+      <p>
+        In October 2023, the U.S. Department of Justice unsealed an indictment linked to the LockBit ransomware group,
+        revealing charges against individuals who had infiltrated the reputable aeronautical company Boeing.
+        LockBit claimed a ransom demand of $200 million to decrypt sensitive company data and prevent the release
+        of the organization's private information.
+      </p>
+      <p>
+        The attackers are believed to have exploited vulnerabilities in Boeing’s Citrix infrastructure—specifically
+        CVE-2023-4966, also known as Citrix Bleed. This buffer-related flaw was found in several of Citrix’s products,
+        including NetScaler ADC and NetScaler Gateway. The vulnerability functioned like a broken door hinge—
+        allowing attackers to slip past authentication mechanisms and into restricted systems.
+      </p>
+      <p>
+        Although Boeing has not publicly shared exact details of the breach, here’s one plausible scenario.
+        An attacker could have triggered an HTTP GET request to an OpenID Connect endpoint (an authentication protocol),
+        supplying an overly long Host header. This may have caused a memory over-read, leaking session cookies,
+        credentials, and internal state data.
+      </p>
+      <p>
+        These credentials let attackers impersonate users or admins without passwords.
+        Since Citrix Gateway is often used for VPN access, hijacked sessions could enable lateral movement into Boeing's
+        internal systems — accessing emails, databases, and applications.
+      </p>
+      <p>
+        LockBit claimed responsibility and reportedly exfiltrated 43GB of data, leaking it after Boeing allegedly refused
+        to pay. Citrix later released security patches, and agencies like CISA and NIST issued public advisories.
+      </p>
+    </article>
+
+    <article class="article-box">
+      <h3>Beyond the Breach: Boeing’s Cyber Attack and the Collapse of Confidence</h3>
+      <p>
+        “I believe this may be the second biggest ransom demand to date — or, perhaps more accurately,
+        to have become public knowledge,” said Brett Callow, a ransomware analyst with the cybersecurity firm Emsisoft.
+      </p>
+      <p>
+        Although Boeing did not pay the $200 million, the fallout was enormous. One major casualty: trust.
+        Over 107 years of reputation took a hit as the breach exposed vulnerabilities in Boeing’s supply chain.
+      </p>
+      <p>
+        Investor confidence wavered. Partners reassessed risk. Regulatory scrutiny deepened. And defense clients began
+        reconsidering their reliance on a newly "digitally vulnerable" supplier. Boeing’s stock dipped, and resources
+        were rapidly redirected to cybersecurity.
+      </p>
+      <p>
+        Crisis response costs skyrocketed. While Boeing likely had cyber insurance, premium hikes and emergency team
+        costs added up. Long-term, the company faces investments in infrastructure, compliance, and digital controls.
+      </p>
+      <p>
+        As a major defense contractor, Boeing’s cyber weaknesses now raise questions about future contract eligibility.
+        The breach didn’t just affect Boeing — it spotlighted cracks in aviation’s digital armor. For Boeing,
+        this may not be a one-off, but a warning for what lies ahead.
+      </p>
+    </article>
+  </main>
+
+  <section class="comic-section">
+    <img src="SB Cartoon.png" alt="Sandboxed comic strip" class="comic-image" />
+  </section>
+</body>
+</html>
+

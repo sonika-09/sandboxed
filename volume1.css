@@ -1,0 +1,100 @@
+@font-face {
+  font-family: 'TAN Meringue';
+  src: url('fonts/TAN MERINGUE.ttf') format('truetype');
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  background-color: #F7D6E0;
+  color: #4e2c34;
+  font-family: 'Darker Grotesque', sans-serif;
+}
+
+.volume-header {
+  text-align: center;
+  padding: 30px 20px 10px;
+}
+
+.brand-title {
+  font-family: 'TAN Meringue', serif;
+  font-size: 56px;
+  color: #772C41;
+  margin-bottom: 10px;
+}
+
+.volume-title {
+  font-size: 35px;
+  font-weight: 500;
+  color: #772C41;
+  margin-top: 0;
+  text-align: center;
+}
+
+.article-section {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 40px;
+  padding: 30px 40px;
+  max-width: 1200px;
+  margin: 0 auto;
+  box-sizing: border-box;
+}
+
+.article-box {
+  background-color: #C26F83;
+  border: 2px solid #772C41;
+  border-radius: 12px;
+  padding: 20px;
+  width: 500px;
+  box-sizing: border-box;
+}
+
+.article-box h3 {
+  font-size: 20px;
+  color: #fceef2;
+  margin-bottom: 12px;
+  font-weight: 600;
+}
+
+.article-box p {
+  font-size: 16px;
+  line-height: 1.6;
+  margin-bottom: 16px;
+  color: #f5e9e7;
+}
+
+.comic-section {
+  padding: 40px 0;
+  text-align: center;
+}
+
+.comic-image {
+  max-width: 1100%;
+  width: 95%;
+  height: auto;
+  border: 3px solid #772C41;
+  border-radius: 10px;
+}
+
+@media (max-width: 1000px) {
+  .article-section {
+    flex-direction: column;
+    align-items: center;
+    padding: 20px;
+  }
+
+  .article-box {
+    width: 100%;
+    max-width: 600px;
+  }
+
+  .brand-title {
+    font-size: 44px;
+  }
+
+  .volume-title {
+    font-size: 20px;
+  }
+}

@@ -75,41 +75,51 @@ body {
   position: relative;
 }
 
-/* Volume cards */
+/* Shared volume card styles */
 .volume-card {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
   background-color: #592a3a;
   padding: 24px;
   border-radius: 12px;
   width: 180px;
   box-shadow: 0 4px 10px rgba(0,0,0,0.3);
-  border: none;
+  text-decoration: none;
   color: #fcdbe1;
-  font-size: 16px;
+  transition: transform 0.3s ease;
+  border: none;
   cursor: default;
-  opacity: 1;
-  transition: all 0.3s ease;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  pointer-events: none;
 }
+
+.volume-card img {
+  width: 100%;
+  height: auto;
+  margin-bottom: 12px;
+}
+
 .volume-card p {
   font-family: 'TAN Meringue', serif;
   font-size: 15px;
   color: #fcdbe1;
   margin: 0;
 }
-.volume-card img {
-  width: 100%;
-  height: auto;
-  margin-bottom: 12px;
+
+/* Available (clickable) volume card */
+.volume-card.available {
+  background-color: #592a3a;
+  cursor: pointer;
 }
-.volume-card:disabled {
-  pointer-events: none;
-}
-.volume-card:enabled:hover {
-  opacity: 1;
+
+.volume-card.available:hover {
   transform: translateY(-2px);
+  opacity: 0.95;
+}
+
+/* Disabled volume card */
+.volume-card.disabled {
+  opacity: 0.5;
+  pointer-events: none;
 }
 
 /* Tortoise images */
@@ -146,9 +156,9 @@ body {
   z-index: 3;
   white-space: nowrap;
   overflow: hidden;
-
 }
 
+/* Mobile styling */
 @media (max-width: 768px) {
   .tagline-wrapper {
     background-color: rgba(252, 219, 225, 0.25);
@@ -174,22 +184,15 @@ body {
     z-index: 1;
   }
   .volumes {
-    display: flex;
-    flex-wrap: wrap; 
-    justify-content: center;
+    flex-wrap: wrap;
     gap: 12px;
-    padding: 0px 12px 30px;
+    padding: 0 12px 30px;
   }
   .volume-card {
     width: 31%;
-    max-width: none;
     min-width: 80px;
     padding: 14px;
     box-sizing: border-box;
-  }
-  .volume-card img {
-    width: 100%;
-    height: auto;
   }
   .volume-card p {
     font-size: 13px;
@@ -202,3 +205,5 @@ body {
     box-sizing: border-box;
   }
 }
+
+
