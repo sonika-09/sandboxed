@@ -217,7 +217,10 @@ body {
     flex: 0 1 100%;
     max-width: 90%;
   }
-  .tortoise-icon {
+  /* .tortoise-icon {
     width: 120px;
+  } */
+  .tortoise-wrapper {
+    display: none;
   }
 }
