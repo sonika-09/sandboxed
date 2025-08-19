@@ -68,12 +68,10 @@ body {
 /* Volume section */
 .volumes {
   display: grid;
-  grid-template-columns: repeat(3, 1fr);
+  grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
   gap: 40px;
   padding-bottom: 80px;
-  z-index: 2;
-  position: relative;
-  max-width: 900px;
+  max-width: 1000px;
   margin: 0 auto;
 }
 
