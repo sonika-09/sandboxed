@@ -67,12 +67,14 @@ body {
 
 /* Volume section */
 .volumes {
-  display: flex;
-  justify-content: center;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
   gap: 40px;
   padding-bottom: 80px;
   z-index: 2;
   position: relative;
+  max-width: 900px;
+  margin: 0 auto;
 }
 
 /* Shared volume card styles */
@@ -184,7 +186,7 @@ body {
     z-index: 1;
   }
   .volumes {
-    flex-wrap: wrap;
+    grid-template-columns: 1fr;
     gap: 12px;
     padding: 0 12px 30px;
   }
