@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>SandBoxed - Volume 8</title>
+  <link rel="icon" href="../favicon-32x32.png" type="image/png" />
+  <link rel="stylesheet" href="../volume1.css" />
+</head>
+<body>
+  <header class="volume-header">
+  <div class="header-decor">
+    <hr />
+    <div class="header-content">
+      <div class="tortoise-wrapper">
+        <img src="../SandBoxed_Logo___1_-removebg-preview.png" alt="Tortoise Icon" class="tortoise-icon">
+      </div>
+      <h1 class="brand-title">SandBoxed</h1>
+    </div>
+    <div class="info-line">
+      <span class="volume-label"><strong>Vol. 8</strong></span>
+      <span class="date-line">WEDNESDAY, 14 JANUARY 2026</span>
+      <span class="right-placeholder"></span>
+    </div>
+    <hr />
+  </div>
+  <h2 class="volume-title"><strong>How Equifax Lost America’s Trust</strong></h2>
+  </header>
+
+  <main class="article-section">
+    <article class="article-box">
+      <h3>CVE-2017-5638 and the Breach That Followed</h3>
+      <p>
+        In May of 2017, one of the U.S.’s largest credit reporting agencies, Equifax, suffered a massive data breach 
+        that is still discussed today due to how avoidable it was.
+      </p>
+      <p>
+        The breach began when attackers exploited a known vulnerability, CVE-2017-5638, which is a critical remote code 
+        execution (RCE) vulnerability that allows attackers to run arbitrary commands on affected web servers. Equifax 
+        failed to patch the vulnerability in time, allowing attackers to gain unauthorized access to its systems in 
+        mid-May 2017. 
+      </p>
+      <p>
+        Over the next several weeks, the attackers dug their way to a goldmine of confidential records, containing the PII of 
+        millions of individuals. This data was soon exfiltrated in small chunks to not alert the company and was also encrypted 
+        in transmission. Usually, a company as big as Equifax would have detected this malicious act, but the attackers were in 
+        luck; Equifax was using a traffic inspection tool that failed because the security certificate for that tool had expired, 
+        and it could not detect this data. 
+      </p>
+      <p>
+        Later, in July, when the certificate was updated, the agency became aware of there being a malicious presence in their 
+        systems and began investigating without informing the public. After a month, an official message was posted, and a website 
+        for aiding the affected was created. Equifax faced a lot of backlash for this grave compromise of personal records and their 
+        amateur way of dealing with this breach.
+      </p>
+      <p>
+        It was found that the attackers could have been from the Chinese military, of which 4 were indicted. While the stolen data was 
+        never publicly dumped on the dark web, U.S. authorities believe the breach was conducted for intelligence-gathering purposes.
+      </p>
+      <p>
+        This incident highlights the importance of timely patching, frequent security audits, and maintaining up-to-date security controls 
+        to prevent avoidable breaches.
+      </p>
+    </article>
+
+    <article class="article-box">
+      <h3>The Price of Negligence: How Equifax Lost Trust</h3>
+      <p>
+        Equifax wasn’t hacked because attackers were brilliant — it was breached because basic cybersecurity discipline failed at a company 
+        that controlled the financial identities of half a nation.
+      </p>
+      <p>
+        May-July 2017 was a devastating period for Equifax as a cyberattack resulted in the credit bureau being robbed of personal data of 
+        147 million people. This personal data included social security numbers, addresses, license numbers, and credit card numbers. But what 
+        struck worse was that providing these details was mandatory for consumers, meaning the attack affected those who were hesitant to 
+        provide these details but were reassured by Equifax.
+      </p>
+      <p>
+        The attack has been estimated to cost Equifax about $1.4 Billion– law suits, regulatory fines, security remediation, and more. While this 
+        $1.4 Billion was financially no issue, strategically it had caused the company to fall apart. Financially, the company was able to split 
+        the costs over upcoming years and cancel out some of the balance with cyber insurance. Moreover, Equifax, in itself, is a large, profitable 
+        firm with billions in annual revenue. On the other hand, the company faced serious reputational damage, becoming synonymous with negligence. 
+        Furthermore, the regulatory board and US government, was no less than hostile as board-level accountability was questioned and cybersecurity 
+        was reframed as fiduciary duty, not IT hygiene.  
+      </p>
+      <p>
+        Several senior executives resigned or were fired. This was because the breach was a management failure, rather than an IT failure. The breach 
+        is often described to be very preventable because nothing about it required advanced hacking or novel techniques, hence termed as an “oversight 
+        failure”. Once public, regulatory and media scrutiny intensified, while insider-trading allegations further damaged leadership credibility. 
+        Retaining the same executives would have signaled weak accountability. Their exit reflected a shift in cybersecurity from an operational issue to 
+        a fiduciary responsibility at the board level.
+      </p>
+      <p>
+        This breach cost Equifax its credibility, not just its systems.
+      </p>
+    </article>
+  </main>
+  <section class="puzzle-section">
+    <h4 class="puzzle-title">Decode the Phrase</h4>
+    <p class="puzzle-clue">
+        Htxlida idlohg qrw eb kdfnhuv, exw eb qhjohfw.<br>
+        <em>(Hint: Shift each letter back by 3)</em>
+    </p>
+    <p class="puzzle-answer">
+        Equifax failed not by hackers, but by neglect.
+    </p>
+  </section>
+  <section class="comic-section">
+  <h4 class="comic-caption">The SandBoxed Cartoon</h4>
+  <div class="comic-grid">
+    <img src="../comics/8pic1.png" alt="Comic Frame 1" class="comic-frame" />
+    <img src="../comics/8pic2.png" alt="Comic Frame 2" class="comic-frame" />
+    <img src="../comics/8pic3.png" alt="Comic Frame 3" class="comic-frame" />
+    <img src="../comics/8pic4.png" alt="Comic Frame 4" class="comic-frame" />
+  </div>
+  </section>
+  <footer class="footer-message">
+    <p>You’ve been reading <strong>SandBoxed</strong>.<br>
+      Written by Sonika & Trisha<br>
+      Catch you in two Wednesdays.
+    </p>
+  </footer>
+
+</body>
+</html>
