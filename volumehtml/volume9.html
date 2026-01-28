@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>SandBoxed - Volume 9</title>
+  <link rel="icon" href="../favicon-32x32.png" type="image/png" />
+  <link rel="stylesheet" href="../volume9.css" />
+</head>
+<body>
+  <header class="volume-header">
+  <div class="header-decor">
+    <hr />
+    <div class="header-content">
+      <div class="tortoise-wrapper">
+        <img src="../SandBoxed_Logo___1_-removebg-preview.png" alt="Tortoise Icon" class="tortoise-icon">
+      </div>
+      <h1 class="brand-title">SandBoxed</h1>
+    </div>
+    <div class="info-line">
+      <span class="volume-label"><strong>Vol. 9</strong></span>
+      <span class="date-line">WEDNESDAY, 28 JANUARY 2026</span>
+      <span class="right-placeholder"></span>
+    </div>
+    <hr />
+  </div>
+  <h2 class="volume-title"><strong>The Worm That Weaponized Windows</strong></h2>
+  </header>
+
+  <main class="article-section">
+    <article class="article-box">
+      <h3>Stuxnet: A Cyberattack with Physical Consequences</h3>
+      <p>
+        “New light through old Windows”, said Malwarebytes’ Senior Director of Threat Intelligence Jérôme Segura in 2010, when 
+        the world witnessed a cyberattack that was capable of causing physical destruction through malware. Stuxnet, a worm 
+        designed to sabotage industrial control systems, was deployed at Iran’s Natanz nuclear enrichment facility. 
+      </p>
+      <p>
+        This type of malicious software was specifically targeted at the Siemens PLCs (Programmable Logic Controllers), which were 
+        controlling centrifuges that were being used for uranium enrichment. Stuxnet was furtively introduced via infected USB drives 
+        into air-gapped networks, which is ironic since these networks are meant to isolate from all external networks, hence providing 
+        high security. Next, unlike a virus, this malware did not require human interaction to activate and began exploiting multiple 
+        Windows zero-day vulnerabilities, allowing RCE, privilege escalation, and lateral movement. 
+      </p>
+      <p>
+        Furthermore, the worm manipulated the rotation speeds of the centrifuges, causing mechanical stress, hence slowing down uranium 
+        enrichment. The monitoring systems were made to show false sensor data to mask the malicious actions taking place, which is why 
+        it took a while for the malware to be detected. 
+      </p>
+      <p>
+        Later, Stuxnet wriggled its way from device to device, infecting multiple systems and spreading across different countries, making 
+        its impact global. But upon detection, Microsoft rapidly issued patches for the zero-day vulnerabilities, new malware detection rules 
+        were made, and the infected Windows machines were cleaned or reimaged.
+      </p>
+      <p>
+        The key takeaway is that malware can be utilized for something far worse than stealing data, and isolation without controls is a false 
+        sense of security. Security must be a core design requirement, not an afterthought.
+      </p>
+    </article>
+
+  </main>
+  <section class="puzzle-section">
+    <h4 class="puzzle-title">Decode the Phrase</h4>
+    <p class="puzzle-clue">
+        Ymj hjsywnkzlj xujji nx xjy yt bwnyj xfgtyflj.<br>
+        <em>(Hint: Shift each letter back by 5)</em>
+    </p>
+    <p class="puzzle-answer">
+        The centrifuge speed is set to write sabotage.
+    </p>
+  </section>
+  <section class="comic-section">
+  <h4 class="comic-caption">The SandBoxed Cartoon</h4>
+  <div class="comic-grid">
+    <img src="../comics/9pic1.png" alt="Comic Frame 1" class="comic-frame" />
+    <img src="../comics/9pic2.png" alt="Comic Frame 2" class="comic-frame" />
+    <img src="../comics/9pic3.png" alt="Comic Frame 3" class="comic-frame" />
+    <img src="../comics/9pic4.png" alt="Comic Frame 4" class="comic-frame" />
+  </div>
+  </section>
+  <footer class="footer-message">
+    <p>You’ve been reading <strong>SandBoxed</strong>.<br>
+      Written by Sonika<br>
+      Catch you in two Wednesdays.
+    </p>
+  </footer>
+
+</body>
+</html>
