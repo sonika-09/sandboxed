@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>SandBoxed - Volume 15</title>
+  <link rel="icon" href="../favicon-32x32.png" type="image/png" />
+  <link rel="stylesheet" href="../volume9.css" />
+</head>
+<body>
+  <header class="volume-header">
+  <div class="header-decor">
+    <hr />
+    <div class="header-content">
+      <div class="tortoise-wrapper">
+        <img src="../SandBoxed_Logo___1_-removebg-preview.png" alt="Tortoise Icon" class="tortoise-icon">
+      </div>
+      <h1 class="brand-title">SandBoxed</h1>
+    </div>
+    <div class="info-line">
+      <span class="volume-label"><strong>Vol. 15</strong></span>
+      <span class="date-line">WEDNESDAY, 01 JULY 2026</span>
+      <span class="right-placeholder"></span>
+    </div>
+    <hr />
+  </div>
+  <h2 class="volume-title"><strong>When Machines Need ID Cards</strong></h2>
+  </header>
+
+    <main class="article-section">
+        <article class="article-box">
+        <p>
+            There was a time when securing an organization was relatively straightforward. Most applications, servers, and employees operated within a single network, 
+            much like everyone working inside one office building. A firewall protected the entrance, and once someone stepped inside, they were generally trusted. That 
+            approach worked well when systems were centralized and interactions were limited.
+        </p>
+        <p>
+            Today’s technology landscape looks very different. Applications are spread across cloud platforms and powered by microservices, containers, APIs, and serverless 
+            functions. Instead of a single office building, organizations now resemble an interconnected city where thousands of digital interactions occur every second. 
+            Most of these conversations are not between people, but between machines working quietly behind the scenes to deliver the services we use every day.
+        </p>
+        <p>
+            For those conversations to remain secure, machines need identities of their own. These are known as Non-Human Identities (NHIs). Unlike employees who authenticate 
+            with passwords or multi-factor authentication, software workloads verify their identity with certificates, tokens, or cloud-managed credentials. Whether it is a 
+            Kubernetes pod requesting data or a CI/CD pipeline deploying new code, every workload must first answer a simple question: “Who are you?” 
+        </p>
+        <p>
+            However, identity alone is not enough. Once a service proves who it is, it must also demonstrate that it has permission to perform the requested action. This is 
+            where service-to-service authorization becomes essential. An Order Service may be allowed to create a payment request but not issue refunds. An Inventory Service 
+            may access product information but should never be able to read payroll records. By granting only the permissions that each service genuinely requires, organizations 
+            reduce the risk of attackers exploiting compromised credentials.
+        </p>
+        <p>
+            This philosophy lies at the heart of Zero Trust. Every request is authenticated, authorized, and continuously evaluated, regardless of where it originates.
+        </p>
+        <p>
+            As organizations continue adopting cloud-native technologies and AI-driven systems, the number of Non-Human Identities will only continue to grow. Yet securing them 
+            remains one of cybersecurity’s newest frontiers. While standards, identity frameworks, and authorization models are advancing, there is still no universal blueprint 
+            for managing machine identities at scale. The challenge is no longer recognizing that NHIs need protection. It is determining how to secure millions of them without 
+            slowing the systems they enable. As the digital landscape continues to evolve, the answers are still being written, and the future of NHI authorization remains an open 
+            chapter for the cybersecurity community.
+        </p>
+        </article>
+    </main>
+<section class="puzzle-section">
+  <h4 class="puzzle-title">Decode the Authorization</h4>
+  <p class="puzzle-clue">
+    Hyhub vhuylfh pxvw hduq wuxvw ehiruh lw lv doorzhg wr frppxqlfdwh.<br>
+    <em>(Hint: Shift each letter back by 3)</em>
+  </p>
+  <p class="puzzle-answer">Every service must earn trust before it is allowed to communicate.</p>
+</section>
+
+  <footer class="footer-message">
+    <p>You’ve been reading <strong>SandBoxed</strong>.<br>
+      Written by Sonika & Trisha<br>
+      Catch you in two Wednesdays.
+    </p>
+  </footer>
+
+</body>
+</html>
